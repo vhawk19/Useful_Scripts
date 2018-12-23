@@ -1,7 +1,7 @@
 import telegram
 token=''
 def send_mail(chat_id,message):
-    send=telegram,Bot(token=token)
+    send=telegram.Bot(token=token)
     try:
         send.sendMessage(chat_id,text=msg)
         print("sent succesfully")
